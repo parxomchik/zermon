@@ -178,7 +178,7 @@
   </ul>
 </li>   
                 </ul>
-                <button id="korzina" class="btn margin_top_15 font_size_18 pull-right"><i class="fa fa-shopping-cart"></i></button>
+                <button id="korzina" class="btn margin_top_15 font_size_18 pull-right" data-toggle="modal" data-target="#korzinaModal"><i class="fa fa-shopping-cart"></i></button>
 				<form class="navbar-form" role="search">
 					<div class="input-group col-xs-12  ">
 						<input type="text" class="form-control col-xs-12 margin_top_10" placeholder=" Поиск">
@@ -486,6 +486,57 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+<div class="modal fade" id="korzinaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ваши заказы</h4>
+      </div>
+      <div class="modal-body">
+<ul class="media-list">
+  <li class="media">
+           <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="media-left">
+     
+      <a href="#">
+        <img data-src="holder.js/150x150/sky" class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Футболка фирменая</h4>
+      <p>Размер M</p>
+      <p>300грн</p>
+    </div>
+  </li>
+</ul>
+   <ul class="media-list">
+  <li class="media">
+           <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="media-left">
+     
+      <a href="#">
+        <img data-src="holder.js/150x150/sky" class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Футболка фирменая</h4>
+      <p>Размер M</p>
+      <p>300грн</p>
+    </div>
+  </li>
+</ul>     
+        </div>
+        <div class="modal-footer">
+<strong>Итого: 600 грн</strong>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn btn-primary">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
