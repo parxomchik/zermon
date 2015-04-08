@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -6,28 +8,65 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    margin-bottom: 60px;
+/*    margin-bottom: 60px;*/
+    
 }
 .footer {
-/*
-    position: absolute;
-    bottom: 0;
-*/
-    width: 100%;
-    /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #f5f5f5;
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    width: 100%;*/
+/*    max-height: 250px;*/
+    background-color: #e1e1e1;
 }
-
-
+.footer li a {
+    color: black;
+    text-decoration: none;
+}
+.footer li a:hover {
+    color: #dda454;
+}
+.footer_padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.white_line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+#content {
+/*    margin-bottom: 60px;*/
+}
+#currency {
+    height: 22px;
+    margin-top: 4px;
+}
+#carrency_label{
+    color: white;
+    font-size: 16px;
+    padding-top: 3px;
+    padding-right: 4px;
+}
+.category:hover img{
+    border-top: 5px solid #dda454;
+}
+.category:hover div{
+    background-color: black;
+    color: white;
+}
+.hover_text {
+    padding-top: 5px;
+}
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
 
 /*
 body > .container {
-    padding: 60px 15px 0;
+    padding: 80px 15px 0;
 }
+*/
+/*
 .container .text-muted {
     margin: 20px 0;
 }
@@ -224,6 +263,9 @@ code {
 .padding_top_10 {
     padding-top: 10px;
 }
+.padding_left_20 {
+    padding-top: 20px;
+}
 .padding_top_20 {
     padding-top: 20px;
 }
@@ -235,14 +277,25 @@ code {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.padding_top_4 {
+/*
+.padding_top_10 {
     padding-top: 6px;
 }
+*/
 .margin_top_20 {
     margin-top: 20px;
 }
+.margin_top_15 {
+    margin-top: 15px;
+}
+.margin_bottom_40 {
+    margin-bottom: 40px;
+}
 .margin_top_10 {
     margin-top: 10px;
+}
+.margin_bottom_10 {
+    margin-bottom: 10px;
 }
 .margin_fix{
     margin: 0;
@@ -253,18 +306,222 @@ code {
 .font_size_18 {
     font-size: 18px;
 }
+.font_size_20 {
+    font-size: 20px;
+}
+.font_size_16 {
+    font-size: 16px;
+}
 #menu1 {
     max-height: 30px;
+    padding-right: 0;
 }
 #navbar ul li a{
     padding-top: 6px;
+}
+#navbar {
+    padding-left: 0;
+    padding-right: 10px;
 }
 #main_nav  {
 /*    border-bottom: 1px solid black ;*/
 box-shadow: 0px 9px 20px -19px rgba(0,0,0,0.75);
 }
 a{
-/*    border-bottom: 1px solid black ;*/
-/*box-shadow: 0px 9px 20px -19px rgba(0,0,0,0.75);*/
     color: black;
 }
+
+#main_nav .nav {
+    padding-left: 15px;
+    padding-top: 10px;
+/*    padding-bottom: 10px;*/
+}
+#main_nav .navbar-nav>li>a:hover,
+#main_nav .navbar-nav>li>a:active,
+/*#main_nav .dropdown-menu>li>a:hover,*/
+#search_btn,#reset_btn{
+    color: #dda454;
+    background: white;
+}
+#main_nav .dropdown-menu>li>a:hover{
+      color: white;  
+      background:#dda454; 
+}
+#korzina {
+    background: white;
+    border: 1px solid #dda454;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+#korzina i{
+    color: #dda454;
+    font-size: 22px;
+}
+/*
+#reset_btn {
+    background: white;
+    color: red;
+}
+*/
+/*
+#main_nav .dropdown-menu {
+    top:105%;
+}
+*/
+/*
+#main_nav .navbar-nav>li:hover {
+    background: white;
+}
+*/
+.logo {
+    margin-top: 15px;
+/*    margin-left: 15px;*/
+/*    color:#FF9900        ;*/
+    font-family: 'Robobo', serif;
+    color: #dda454;
+    font-size: 56px;
+}
+.logo_footer {
+/*    margin-left: 15px;*/
+/*    color:#FF9900        ;*/
+    font-family: 'Robobo', serif;
+    color: #dda454;
+    font-size: 56px;
+    padding-left: 45px;
+}
+
+
+/*
+.logo_footer{
+    color: white;
+    font-size: 46px;
+    font-family: 'Robobo', serif;
+    padding-top: 20px;
+    padding-right: 30px;
+}
+*/
+/*
+.logo_footer:hover {
+    color: #dda454;
+}
+*/
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+}
+.logo_img {
+    max-width: 120px;
+}
+/*
+#footer_menu li{
+    padding-top: 10px;
+}
+#owl-demo2 img {
+    max-height: 350px;
+    max-width: 250px;
+} 
+*/
+/*
+.owl-theme .owl-controls .owl-page .active span{
+    background: black;
+}
+*/
+/*
+.navbar-brand {
+     display: block;
+	 float: left;
+	 content: '';
+	 background: url(../Img/logo3.jpg) no-repeat;
+	 width: 5em;
+	 height: 4em;
+	 margin-right: .25em;
+    margin-top: 5px;
+}
+*/
+selector + [data-readmore-toggle], selector[data-readmore] {
+  display: block;
+  width: 100%;
+}
+.link {
+    color: #337ab7;
+/*    text-decoration: underline;*/
+}
+#content {
+    background-color: #f1f1f1;
+}
+/*modal login*/
+
+@media (min-width: 768px) {
+    .omb_row-sm-offset-3 div:first-child[class*="col-"] {
+        margin-left: 25%;
+    }
+}
+
+.omb_login .omb_authTitle {
+    text-align: center;
+	line-height: 300%;
+}
+	
+.omb_login .omb_socialButtons a {
+	color: white; // In yourUse @body-bg 
+	opacity:0.9;
+}
+.omb_login .omb_socialButtons a:hover {
+    color: white;
+	opacity:1;    	
+}
+.omb_login .omb_socialButtons .omb_btn-facebook {background: #3b5998;}
+.omb_login .omb_socialButtons .omb_btn-twitter {background: #00aced;}
+.omb_login .omb_socialButtons .omb_btn-google {background: #c32f10;}
+
+
+.omb_login .omb_loginOr {
+	position: relative;
+	font-size: 1.5em;
+	color: #aaa;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.omb_login .omb_loginOr .omb_hrOr {
+	background-color: #cdcdcd;
+	height: 1px;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.omb_login .omb_loginOr .omb_spanOr {
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: -0.6em;
+	margin-left: -1.5em;
+	background-color: white;
+	width: 3em;
+	text-align: center;
+}			
+
+.omb_login .omb_loginForm .input-group.i {
+	width: 2em;
+}
+.omb_login .omb_loginForm  .help-block {
+    color: red;
+}
+
+	
+@media (min-width: 768px) {
+    .omb_login .omb_forgotPwd {
+        text-align: right;
+		margin-top:10px;
+ 	}	
+    
+}
+@media (max-width:768px){
+    .footer ul li a {
+    padding-top: 10px;
+/*    padding-bottom: 10px;*/
+}
+}
+
+/*end modal login*/
