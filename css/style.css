@@ -259,7 +259,9 @@ code {
   height: auto;
 }
 /*------ end owl --------*/
-
+.padding_0 {
+    padding: 0;
+}
 .padding_top_10 {
     padding-top: 10px;
 }
@@ -525,3 +527,71 @@ selector + [data-readmore-toggle], selector[data-readmore] {
 }
 
 /*end modal login*/
+
+
+/*Classes by Nazik*/
+
+hr {
+    margin: 0;
+    border: 0px;
+    border-top: 2px solid #404040;
+}
+/*Item page*/
+a.photo-block, a.photo-block:focus, a.photo-block:hover{
+    color:inherit;
+    text-decoration: none;
+}
+.photo-block {
+    display: block;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+.photo {
+    position: relative;
+    width: 100%;
+    height: 90%;
+    margin:0 auto;
+    clear: both;
+}
+.item-list .photo {
+    height: 100%;
+}
+.photo > img {
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    margin:0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px;
+}
+.scale-photo {
+    height: 10%;
+    line-height: 50px;
+}
+.vertical-carousel {
+    width: 100%;
+    padding: 0;
+}
+.vertical-carousel .item-list {
+    padding: 0;
+}
+.vertical-carousel .item-list li {
+    list-style: none;     
+}
+.vertical-carousel .item-list li a {
+    display: block;
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    border:1px solid #ccc;
+    margin-bottom: 1px;
+}
+/*right side*/
+.item-name {
+    font-size: 2em;
+}
