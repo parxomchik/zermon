@@ -622,12 +622,12 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     font-size: 2em;
 }
 /*style for zoom*/
-/*.zoomLens {
+.zoomLens {
  cursor: crosshair!important;
 }
 .zoomWindowContainer, .zoomContainer{
     height: 100%!important;
-}*/
+}
 /*.zoomWindow {
     width: 100%!important;
     height: 100%!important;
