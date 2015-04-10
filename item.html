@@ -206,18 +206,19 @@
   </div>
   <div class="col-md-12 padding_0">
 
-    <div class="col-md-6" style="padding:0">
-      <div class="col-md-10">
+    <div class="col-md-5" style="padding:0">
+      <div class="col-md-9" style="padding-left:0;">
         <a href="#" class="photo-block">
           <div class="photo">
-            <img src="http://goober.com.ua/images/pimages/max/36426.jpg" alt="">
-          </div>
+            <!-- <img src="http://goober.com.ua/images/pimages/max/36426.jpg" alt=""> -->
+            <img id="zoom_01" src='img/rubashki.png' data-zoom-image="img/rubashki.jpg"/>
+          </div>       
           <div class="scale-photo text-center">
             <span class=""><i class="glyphicon glyphicon-search"></i>Увеличить фото</span>  
           </div>           
         </a>
       </div>
-      <div class="col-md-2" style="padding:0">
+      <div class="col-md-3" style="padding:0">
         <div class="vertical-carousel">
           <ul class="item-list">
             <li>
@@ -246,7 +247,7 @@
       </div>
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-7">
       <p class="firm-name text-muted">
         Название фирмы
       </p>
@@ -266,7 +267,7 @@
     </div>
 
   </div>
-
+  
 </div>
 <footer class="footer col-md-12 padding_fix">
     <div class="container col-xs-12 footer_padding">
@@ -472,6 +473,7 @@
 <script src="js/holder.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/owl_settings.js"></script>
+<script src='js/jquery.elevatezoom.js'></script>
       <script>
 //    $('#info').readmore({
 //        collapsedHeight: 384,
@@ -487,7 +489,19 @@
         moreLink: '<a class="font_size_18 text-center link" href="#">Читать далее</a>',      
         lessLink: '<a class="font_size_18 text-center link" href="#">Скрыть</a>'
     });
+    $('#zoom_01').elevateZoom({
+    zoomType: "lens",
+ cursor: "none",
+ lensSize: 200,
+ borderSize: 0
+ // zoomWindowPosition: 3,
+ // zoomWindowWidth: 150,
+ // zoomWindowHeight: 150,
+ // zoomWindowFadeIn: 500,
+ // zoomWindowFadeOut: 750,
+   });     
   </script>
+
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 </body>
 </html>
