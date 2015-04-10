@@ -11,6 +11,13 @@ body {
 /*    margin-bottom: 60px;*/
     
 }
+.navbar-toggle .icon-bar {
+    background-color: black;
+}
+.navbar-toggle {
+    border-color: black;
+    padding: 12px;
+}
 .footer {
 /*    position: absolute;*/
 /*    bottom: 0;*/
@@ -44,7 +51,7 @@ body {
 #carrency_label{
     color: white;
     font-size: 16px;
-    padding-top: 3px;
+    padding-top: 5px;
     padding-right: 4px;
 }
 .category:hover img{
@@ -259,9 +266,7 @@ code {
   height: auto;
 }
 /*------ end owl --------*/
-.padding_0 {
-    padding: 0;
-}
+
 .padding_top_10 {
     padding-top: 10px;
 }
@@ -305,6 +310,12 @@ code {
 .padding_fix {
     padding: 0;
 }
+.padding_left_fix {
+    padding-left: 0;
+}
+.font_size_17 {
+    font-size: 17px;
+}
 .font_size_18 {
     font-size: 18px;
 }
@@ -334,8 +345,8 @@ a{
 }
 
 #main_nav .nav {
-    padding-left: 15px;
-    padding-top: 10px;
+/*    padding-left: 15px;*/
+    padding-top: 5px;
 /*    padding-bottom: 10px;*/
 }
 #main_nav .navbar-nav>li>a:hover,
@@ -378,12 +389,22 @@ a{
 }
 */
 .logo {
-    margin-top: 15px;
+    margin-top: 5px;
 /*    margin-left: 15px;*/
 /*    color:#FF9900        ;*/
     font-family: 'Robobo', serif;
     color: #dda454;
-    font-size: 56px;
+    font-size: 50px;
+}
+.logo:before{
+	 display: block;
+	 float: left;
+	 content: '';
+	 background: url(../img/logo_img.png) no-repeat;
+	 width: 80px;
+	 height: 60px;
+/*	 margin-right: .25em;*/
+     margin-top: -18px;
 }
 .logo_footer {
 /*    margin-left: 15px;*/
@@ -391,7 +412,7 @@ a{
     font-family: 'Robobo', serif;
     color: #dda454;
     font-size: 56px;
-    padding-left: 45px;
+    padding-left: 25%;
 }
 
 
@@ -414,6 +435,10 @@ a{
 }
 .logo_img {
     max-width: 120px;
+}
+#search_input {
+    margin-top: 5px;
+    padding:30px 180px 30px 30px ;
 }
 /*
 #footer_menu li{
@@ -527,7 +552,6 @@ selector + [data-readmore-toggle], selector[data-readmore] {
 }
 
 /*end modal login*/
-
 
 /*Classes by Nazik*/
 
