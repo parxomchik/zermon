@@ -661,6 +661,50 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 #item_parametr{
     margin-bottom: 0px;
 }
+.share_to_friend a{
+    text-decoration: none;
+}
+.vk:hover .fa-square {
+    color:#4e729a;
+}
+.facebook:hover .fa-square {
+    color:#3a5795;
+}
+.twitter:hover .fa-square{
+    color:#2b7bb9;
+}
+/*style for tabs*/
+.nav-tabs>li {
+  margin-bottom: -2px;
+}
+.tab-content {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    padding: 15px;
+}
+/*style for comment form*/
+.comment {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    overflow: none;
+    background-color: #f1f1f1
+}
+.comment textarea {
+    width: 100%;
+    padding: 5px;
+    max-width:100%;
+    border-color:#ddd;
+}
+.comment input {
+    padding: 5px;
+    margin-right: 20px;
+    border:1px solid #ddd;
+    /*outline: none;*/
+}
 /*style for zoom*/
 .zoomLens {
  cursor: crosshair!important;

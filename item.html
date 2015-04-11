@@ -272,7 +272,7 @@
         <a href="#" class="pull-right"><i class="fa fa-table"></i> Таблица розмеров</a>
       </p>
       <p>
-        <form id="item_parametr" action="" method="">
+        <form id="item_parametr" action="" method=" ">
           <p>
             Количество: 
             <select name="item_count" id="">
@@ -297,7 +297,55 @@
       <p class="item_description">
         Описание товара...
       </p>
-      <hr/>                
+      <hr/> 
+      <p>
+        <span class="pull-right share_to_friend">Рассказать рузьям:
+          <a href="">          
+          <span class="fa-stack vk">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
+          </span>
+          </a>
+          <a href="">
+          <span class="fa-stack facebook">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          </span>
+          </a>
+          <a href="">
+          <span class="fa-stack twitter">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          </span>    
+          </a>              
+        </span>
+      </p>
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-1" data-toggle="tab">Описание</a></li>
+          <li><a href="#tab-2" data-toggle="tab">Доставка и оплата</a></li>
+          <li><a href="#tab-3" data-toggle="tab">Оставить отзыв</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab-1" class="tab-pane fade in active">
+            <p>Описание товара...</p>
+          </div>
+          <div id="tab-2" class="tab-pane fade">
+            <p>Информация про доставку и оплату...</p>
+          </div>
+          <div id="tab-3" class="tab-pane fade">
+            <form action="" method="" class="comment">
+              <p>
+                <label for="comment_text">Место под форму</label>
+<!--                 <textarea name="comment_text" id="comment_text" rows="7" placeholder="Ваш отзыв..."></textarea>
+              </p>
+              <p><input type="text" name="name" placeholder="Ваше имя...">
+              <input type="text" name="email" placeholder="Ваш email...">
+              </p> -->
+            </form>
+          </div>
+        </div>
+      </div>              
     </div>
 
   </div>
