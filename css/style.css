@@ -558,7 +558,10 @@ selector + [data-readmore-toggle], selector[data-readmore] {
 hr {
     margin: 10px 0;
     border: 0px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #dcdcdc;
+}
+.clear-fix {
+    clear:both;
 }
 /*Item page*/
 /*left side*/
@@ -570,8 +573,8 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     display: block;
     width: 100%;
     height: 500px;
-    background-color: transparent;
-    border:1px solid #ccc;
+/*    background-color: #fff;*/
+    border:1px solid #dcdcdc;
 }
 .photo {
     position: relative;
@@ -581,6 +584,7 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     clear: both;
     padding: 15px;
     overflow: hidden;
+/*    background-color: #fff;*/    
 }
 .item-list .photo {
     height: 100%;
@@ -645,6 +649,25 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     -o-transition: all .2s;
     transition: all .2s;  
 }
+/*style for related items*/
+.photo-block.item_related {
+    height: 250px;
+    border:none;
+}
+.photo-block.item_related .photo {
+    height: 90%;
+}
+.photo-block.item_related .item_related_name{
+    height: 10%;
+    line-height: 30px;
+}
+.photo-block.item_related:hover {
+    border-top: 4px solid #dda454;
+}
+.photo-block.item_related:hover div:nth-child(2) {
+    background: #000;
+    color:#fff;
+}
 /*right side*/
 .item-name {
     font-size: 2em;
@@ -705,6 +728,7 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     border:1px solid #ddd;
     /*outline: none;*/
 }
+
 /*style for zoom*/
 .zoomLens {
  cursor: crosshair!important;
