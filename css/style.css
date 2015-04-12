@@ -603,7 +603,7 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 }
 .scale-photo {
     height: 10%;
-    line-height: 50px;
+    vertical-align: center;
 }
 .vertical-carousel {
     width: 100%;
@@ -617,7 +617,8 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 }
 .vertical-carousel .item-list li a {
     display: block;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 130px;
     background: transparent;
     border:1px solid #ccc;
@@ -625,7 +626,7 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 }
 #gallery_01 img {
     border: none!important;
-    opacity: .5;
+    opacity: .7;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     -ms-transition: all .2s;
@@ -651,20 +652,21 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 }
 /*style for related items*/
 .photo-block.item_related {
-    height: 250px;
+    max-height: 250px;
     border:none;
+    margin-bottom: 20px; 
 }
 .photo-block.item_related .photo {
     height: 90%;
 }
-.photo-block.item_related .item_related_name{
+.photo-block.item_related .text-center{
     height: 10%;
-    line-height: 30px;
+    vertical-align: center;
 }
 .photo-block.item_related:hover {
     border-top: 4px solid #dda454;
 }
-.photo-block.item_related:hover div:nth-child(2) {
+.photo-block.item_related:hover .text-center {
     background: #000;
     color:#fff;
 }
@@ -781,3 +783,37 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
   top: 121px;
   outline: 0;
   }
+  /*style for mobile and "planshet"*/ 
+@media (max-width:992px) {
+    .photo-block {
+        height: 600px;
+    }
+    .vertical-carousel .item-list li a {
+        width: 100%;
+    }
+    .zoomLens {
+        display: none!important;
+    }
+    .zoomwindow {
+        display: none!important;  
+    }
+    .zoomContainer {
+        display: none!important;
+    }
+    .zoomwindowContainer {
+        display: none!important;
+    }    
+}
+@media (max-width:768px){
+    /*off zoom*/
+    .vertical-carousel .item-list li  {
+        float: left;
+    }
+    .vertical-carousel .item-list li:not(:last-child)  {
+        margin-right: 15px;
+    }
+    .vertical-carousel .item-list li  a{
+        width: 140px;
+        height: 170px;
+    }
+}
