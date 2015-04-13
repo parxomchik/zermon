@@ -313,7 +313,7 @@
       <hr/> 
       <p class="pack_size_p">
         <span class="pack_size">Розмеры комплекта: <span class="pack_size_value">M, L, XL</span></span>
-        <a href="#" class="pull-right"><i class="fa fa-table"></i> <span class="hidden-xs">Таблица розмеров</span></a>
+        <a href="#size-tableModal" id="size-table" class="pull-right" data-toggle="modal" data-target="#size-tableModal"><i class="fa fa-table"></i> <span class="hidden-xs">Таблица розмеров</span></a>
       </p>
       <p>
         <form id="item_parametr" action="" method=" ">
@@ -664,6 +664,22 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Продолжить покупки</button>
         <button type="button" class="btn btn-primary">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for size-table -->
+
+<div class="modal fade" id="size-tableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">Таблица розмеров</h4>
+      </div>
+      <div class="modal-body">
+        <h2 class="text-center">Таблица розмеров...</h2>
       </div>
     </div>
   </div>
