@@ -557,6 +557,7 @@ selector + [data-readmore-toggle], selector[data-readmore] {
 
 hr {
     margin: 10px 0;
+    margin-top: auto;
     border: 0px;
     border-top: 1px solid #dcdcdc;
 }
@@ -572,7 +573,7 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 .photo-block {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 550px;
 /*    background-color: #fff;*/
     border:1px solid #dcdcdc;
 }
@@ -601,9 +602,12 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     max-width: 99%;
     max-height: 99%;   
 }
-.scale-photo {
+div.scale-photo {
     height: 10%;
-    vertical-align: center;
+    line-height: 50px;
+}
+div.item_related_name {
+    height: 10%;
 }
 .vertical-carousel {
     width: 100%;
@@ -699,6 +703,9 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     color:#2b7bb9;
 }
 /*style for tabs*/
+.nav.nav-tabs li{
+    padding: 0;
+}
 .nav-tabs>li {
   margin-bottom: -2px;
 }
@@ -752,8 +759,12 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 
 .add_to_basket, .add_to_basket:focus {
     position: absolute;
-    right: 15px;
-    top: 120px;
+    top:-50px;
+    right: 0px;
+    /*top: 0px;*/
+    /*margin-top: 45%;*/
+    /*float: right!important;*/
+    /*position: absolute;*/
     font-size: 1.5em;
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
@@ -780,11 +791,12 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
   background: linear-gradient('to bottom', #62cf57, #29b11b);
   box-shadow: 3px 3px 7px 0 rgba(105, 206, 95, .5), inset 0 -1px 0 0 #3a9731;
   color: #a2e09d;
-  top: 121px;
+/*  top: 121px;*/
   outline: 0;
   }
   /*style for mobile and "planshet"*/ 
 @media (max-width:992px) {
+    /*off zoom*/
     .photo-block {
         height: 600px;
     }
@@ -805,15 +817,69 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
     }    
 }
 @media (max-width:768px){
-    /*off zoom*/
+    .main_content {
+        padding: 0;
+    }
+    .photo-block {
+        max-height: 600px;
+    }
+    .photo-block .photo img {
+        height: 100%;
+    }
+    div.scale-photo {
+        line-height: 30px;
+    }
     .vertical-carousel .item-list li  {
         float: left;
+        width: 30%;
     }
     .vertical-carousel .item-list li:not(:last-child)  {
-        margin-right: 15px;
+        margin-right: 4%;
     }
     .vertical-carousel .item-list li  a{
-        width: 140px;
-        height: 170px;
+        height: 190px;
+    }
+    /*for button*/
+    .add_to_basket, .add_to_basket:focus{
+        position: relative;
+        top:0;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+        float: none!important;
+    }
+    .button_div {
+        text-align: center!important;
+    }
+    /*rising size for icon*/
+    .fa-table, .fa-heart {
+        font-size: 2em!important;
+    }
+    .fa-heart {
+        color:red;
+    }
+    .vk, .facebook, .twitter {
+        font-size: 2em;
+    }
+    .vk .fa-square {
+    color:#4e729a;
+    }
+    .facebook .fa-square {
+        color:#3a5795;
+    }
+    .twitter .fa-square{
+        color:#2b7bb9;
+    }
+    /*align center for "share to friend"*/
+    .share_to_friend {
+        float: none!important;
+    }
+
+}
+/*for mobile ("portretniy rejim")*/
+@media (max-width:500px){
+    .photo-block {
+        max-height: 400px;
     }
 }

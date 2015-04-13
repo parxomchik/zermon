@@ -207,9 +207,10 @@
   <div class="col-md-12 margin_bottom_10 margin_top_10" >
     <span>Хлебные > Крошки</span>
   </div>
-  <div class="col-md-12 padding_0">
+<!--   <div class="container"> -->
+  <div class="col-md-12 main_content" >
 
-    <div class="col-md-6 col-sm-12" style="padding:0">
+    <div class="col-md-5 col-sm-12" style="padding:0">
       <div class="col-md-9 col-sm-8 col-xs-10 col col-sm-offset-1 col-md-offset-0 col-xs-offset-1" style="padding-left:0;">
         <a href="#" class="photo-block">
           <div class="photo">
@@ -223,7 +224,7 @@
       </div>
       <div class="clearfix visible-xs"></div>
       <div class="col-md-3 col-sm-2 col-xs-12" style="padding:0 5px;">
-        <div class="vertical-carousel">
+        <div class="vertical-carousel hidden-xs">
           <ul id="gallery_01" class="item-list">
             <li>
               <a href="#" data-image='img/odegda/IMG_8708.jpg' data-zoom-image="img/odegda/IMG_8708.jpg" class="active">
@@ -289,7 +290,7 @@
 
     </div>
 
-    <div class="col-md-6 col-sm-12">
+    <div class="col-md-7 col-sm-12">
       <p class="firm-name text-muted">
         Название фирмы
       </p>
@@ -305,16 +306,20 @@
       <p style="position:relative;">
         Цена за упаковку: <span class="product_price_pack">9999</span>
       </p>
+      <div class="button_div" style="position:relative;">       
+        <button type="submit" name="submit" class="btn btn-default add_to_basket pull-right"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+      </div>
+      <div class="clearfix"></div>
       <hr/> 
       <p class="pack_size_p">
         <span class="pack_size">Розмеры комплекта: <span class="pack_size_value">M, L, XL</span></span>
-        <a href="#" class="pull-right"><i class="fa fa-table"></i> Таблица розмеров</a>
+        <a href="#" class="pull-right"><i class="fa fa-table"></i> <span class="hidden-xs">Таблица розмеров</span></a>
       </p>
       <p>
         <form id="item_parametr" action="" method=" ">
           <p>
             Количество: 
-            <select name="item_count" id="">
+            <select name="item_count" id="" style="padding:5px">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -322,14 +327,13 @@
           </p>          
           <p>
             Цвет: 
-            <select name="item_color" id="">
+            <select name="item_color" id="" style="padding:5px">
               <option value="red">Красный</option>
               <option value="balck">Черный</option>
               <option value="blue">Синий</option>
             </select>
-            <a href="#" class="pull-right"><i class="fa fa-heart"></i> В список желаний</a>
+            <a href="#" class="pull-right"><i class="fa fa-heart"></i><span class="hidden-xs"> В список желаний</span></a>
           </p>
-          <button type="submit" name="submit" class="btn btn-default  add_to_basket"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
         </form>
       </p>
       <hr/>
@@ -342,8 +346,8 @@
         <p>Description</p>
       </p>
       <hr/> 
-      <p>
-        <span class="pull-right share_to_friend">Рассказать рузьям:
+      <p class="col-xs-12 text-center">
+        <span class="share_to_friend pull-right"><span class="hidden-xs">Рассказать рузьям:</span>
           <a href="">          
           <span class="fa-stack vk">
             <i class="fa fa-square fa-stack-2x"></i>
@@ -367,9 +371,9 @@
       <div class="clear-fix"></div>
       <div class="tabs">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab-1" data-toggle="tab">Описание</a></li>
-          <li><a href="#tab-2" data-toggle="tab">Доставка и оплата</a></li>
-          <li><a href="#tab-3" data-toggle="tab">Оставить отзыв</a></li>
+          <li class="active col-xs-12"><a href="#tab-1" data-toggle="tab">Описание</a></li>
+          <li class="col-xs-12"><a href="#tab-2" data-toggle="tab">Доставка и оплата</a></li>
+          <li class="col-xs-12"><a href="#tab-3" data-toggle="tab">Оставить отзыв</a></li>
         </ul>
         <div class="tab-content">
           <div id="tab-1" class="tab-pane fade in active">
@@ -394,6 +398,7 @@
     </div>
 
   </div>
+<!--   </div> -->
   <div class="clearfix visible-sm"></div>
   <div class="row" style="padding:15px">
     <div class="col-md-12">
