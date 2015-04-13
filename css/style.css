@@ -621,7 +621,7 @@ div.item_related_name {
 }
 .vertical-carousel .item-list li a {
     display: block;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     height: 130px;
     background: transparent;
@@ -819,6 +819,10 @@ div.item_related_name {
 @media (max-width:768px){
     .main_content {
         padding: 0;
+    }
+    /*for tabs*/ 
+    .nav.nav-tabs li{
+        width: 100%;
     }
     .photo-block {
         max-height: 600px;
