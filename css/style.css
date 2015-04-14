@@ -742,10 +742,11 @@ div.item_related_name {
 .zoomLens {
  cursor: crosshair!important;
  min-height: 150px!important;
- min-width: 150px!important;
+ min-width: 170px!important;
 }
 .zoomwindow {
-    height: 100%!important;  
+    height: 100%!important;
+    width: 170%!important  
 }
 /*style for lightbox*/ 
 
