@@ -572,6 +572,9 @@ hr {
 .clear-fix {
     clear:both;
 }
+body {
+    background-color: #f1f1f1
+}
 /*Item page*/
 /*left side*/
 a.photo-block, a.photo-block:focus, a.photo-block:hover{
@@ -823,8 +826,8 @@ div.item_related_name {
 .add_to_basket, .add_to_basket:focus {
     position: absolute;
     top:-50px;
-    margin-left: -12%;
-    font-size: 1.5em;
+    margin-left: -20%;
+    font-size: 1.2em;
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
     vertical-align: middle;
