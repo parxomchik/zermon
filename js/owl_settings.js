@@ -52,6 +52,15 @@ $(document).ready(function() {
 //    }
   });
 
+      $("#owl-demo3").owlCarousel({
+      pagination : false,
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      stopOnHover : true,
+      items : 5,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+  });
+
  
 //  $("#owl-demo2").owlCarousel({
 //    navigationText: [

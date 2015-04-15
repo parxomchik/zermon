@@ -250,47 +250,9 @@
           </ul>
         </div>
       </div>
-      <div class="row" style="padding:0">
-          <div class="col-md-12 hidden-sm hidden-xs">
-            <h3 class="text-center">Сопутствующие товары:</h3>
-        <div class="row">
-          <div class="col-md-4" >
-            <a href="#" class="photo-block item_related">
-              <div class="photo">
-                <img  src="img/odegda/IMG_8708.jpg" data-zoom-image="img/odegda/IMG_8708.jpg">         
-              </div>
-              <div class="item_related_name  text-center">
-                <span class="item_related_name">Название товара</span> 
-              </div>                                
-            </a>            
-          </div>
-          <div class="col-md-4" >
-            <a href="#" class="photo-block item_related">
-              <div class="photo">
-                <img  src="img/odegda/IMG_8713.jpg" data-zoom-image="img/odegda/IMG_8713.jpg">         
-              </div>
-              <div class="item_related_name  text-center">
-                <span class="item_related_name">Название товара</span> 
-              </div>                               
-            </a>            
-          </div>
-          <div class="col-md-4" >
-            <a href="#" class="photo-block item_related">
-              <div class="photo">
-                <img  src="img/odegda/IMG_8710.jpg" data-zoom-image="img/odegda/IMG_8710.jpg">         
-              </div>
-              <div class="item_related_name text-center">
-                <span class="item_related_name">Название товара</span> 
-              </div>                               
-            </a>            
-          </div>
-        </div>
-          </div>
-      </div>
-
     </div>
 
-    <div class="col-md-7 col-sm-12">
+    <div class="col-md-7 col-sm-12" style="margin-bottom:20px">
       <p class="firm-name text-muted">
         ZERMON
       </p>
@@ -306,28 +268,41 @@
       <p style="position:relative;">
         Цена за упаковку: <span class="product_price_pack">21000</span>
       </p>
-      <div class="button_div" style="position:relative;">       
-        <button type="submit" name="submit" class="btn btn-default add_to_basket pull-right"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
-      </div>
       <div class="clearfix"></div>
       <hr/> 
       <p class="pack_size_p">
-        <span class="pack_size">Розмеры комплекта: <span class="pack_size_value">M, L, XL</span></span>
+        <b>Розмеры комплекта:</b> 
+        <br class="visible-xs">
+        <span class="pack_size">
+          <button type="submit" name="submit" class="btn btn-default choose_size">S</button>
+          <button type="submit" name="submit" class="btn btn-default choose_size">M</button>
+          <button type="submit" name="submit" class="btn btn-default choose_size">L</button>
+          <button type="submit" name="submit" class="btn btn-default choose_size">XL</button>
+        </span>
         <a href="#size-tableModal" id="size-table" class="pull-right" data-toggle="modal" data-target="#size-tableModal"><i class="fa fa-table"></i> <span class="hidden-xs">Таблица розмеров</span></a>
       </p>
       <p>
         <form id="item_parametr" action="" method=" ">
           <p>
-            Количество: 
-            <select name="item_count" id="" style="padding:5px">
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-            </select>
-          </p>          
+            <label class="label_item-count" for="item_count">Количество: </label>  
+            <span class="input-group">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-minus"></span>
+                          </button>
+                      </span>
+                      <input  id="item_count" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                      <span class="input-group-btn">
+                          <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                              <span class="glyphicon glyphicon-plus"></span>
+                          </button>
+                      </span>
+            </span>
+
+          </p>
           <p>
-            Цвет: 
-            <select name="item_color" id="" style="padding:5px">
+          <label for="item_color">Цвет: </label>  
+            <select name="item_color" id="item_color" style="padding:5px">
               <option value="red">Красный</option>
               <option value="balck">Черный</option>
               <option value="blue">Синий</option>
@@ -336,38 +311,10 @@
           </p>
         </form>
       </p>
-<!--       <hr/>
-      <p class="item_description">
-        Описание товара... 
-        <p>Description</p>
-        <p>Description</p>
-        <p>Description</p>
-        <p>Description</p>
-        <p>Description</p>
-      </p> -->
+          <div class="button_div" style="position:relative;">       
+            <button type="submit" name="submit" class="btn btn-default add_to_basket pull-right"><i class="fa fa-shopping-cart"></i> Добавить в корзину</button>
+          </div>                    
       <hr/> 
-<!--       <p class="col-xs-12 text-center">
-        <span class="share_to_friend pull-right"><span class="hidden-xs">Рассказать рузьям:</span>
-          <a href="">          
-          <span class="fa-stack vk">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-vk fa-stack-1x fa-inverse"></i>
-          </span>
-          </a>
-          <a href="">
-          <span class="fa-stack facebook">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-          </a>
-          <a href="">
-          <span class="fa-stack twitter">
-            <i class="fa fa-square fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>    
-          </a>              
-        </span>
-      </p> -->
       <div class="clear-fix"></div>
       <div class="tabs">
         <ul class="nav nav-tabs">
@@ -390,94 +337,152 @@
             <form action="" method="" class="comment">
               <p>
                 <label for="comment_text">Место под форму</label>
-<!--                 <textarea name="comment_text" id="comment_text" rows="7" placeholder="Ваш отзыв..."></textarea>
-              </p>
-              <p><input type="text" name="name" placeholder="Ваше имя...">
-              <input type="text" name="email" placeholder="Ваш email...">
-              </p> -->
             </form>
           </div>
         </div>
       </div>              
     </div>
+  <div class="clearfix"></div>
 
-  </div>
-<!--   </div> -->
-  <div class="clearfix visible-sm"></div>
-  <div class="row" style="padding:15px">
-    <div class="col-md-12">
-      <h3 class="text-center">Просмотренные товары:</h3>
-      <div class="row">
-        <div class="col-md-12">
+    <div class="tabs">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#second_tab-1" data-toggle="tab">Сопутствующие товары</a></li>
+        <li class=""><a href="#second_tab-2" data-toggle="tab">Просмотренные товары</a></li>
+      </ul>  
+      <div class="tab-content">
+        <div id="second_tab-1" class="tab-pane fade in active">
 
-
-     <div id="owl-demo2" class="owl-carousel owl-theme">    
-          <div class="item category">
-           <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8721.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8724.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8728.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8730.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8733.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-          <div class="item category">
-              <img src="img/odegda/IMG_8736.jpg" alt="Owl Image">
-            <div class="col-md-12 hover_text">
-              <p class="text-center font_size_16">Рубашка приталеная</p>
-              <p class="text-center font_size_16">400грн</p>
-            </div>
-         </div>
-    </div>
-
-
-
+         <div id="owl-demo2" class="owl-carousel owl-theme">    
+              <div class="item category">
+               <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8721.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8724.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8728.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8730.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8733.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8736.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+        </div>  
 
         </div>
-      </div>
+        <div id="second_tab-2" class="tab-pane fade">
+
+         <div id="owl-demo3" class="owl-carousel owl-theme">    
+              <div class="item category">
+               <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8710.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8721.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8724.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8728.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8730.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8733.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+              <div class="item category">
+                  <img src="img/odegda/IMG_8736.jpg" alt="Owl Image">
+                <div class="col-md-12 hover_text">
+                  <p class="text-center font_size_16">Рубашка приталеная</p>
+                  <p class="text-center font_size_16">400грн</p>
+                </div>
+             </div>
+        </div>          
+
+        </div>
+
+        </div>
+    
     </div>
+
   </div>
-</div>
+<!-- </div> -->
+
+<!-- </div> -->
 <footer class="footer col-md-12 padding_fix">
     <div class="container col-xs-12 footer_padding">
         <div class="col-md-3 text-center hidden-xs">
@@ -700,6 +705,7 @@
 <script src="js/owl_settings.js"></script>
 <script src='js/jquery.elevateZoom-3.0.8.min.js'></script>
 <script src='js/jquery.fancybox.pack.js'></script>
+<script src='js/item_count.js'></script>
       <script>
 //    $('#info').readmore({
 //        collapsedHeight: 384,
