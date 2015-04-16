@@ -203,8 +203,7 @@
 		</div>
 	</nav>   
 <!-- Begin page content -->
-<div class="container">
-<div id="content" class="col-xs-12 col-md-12" style="padding-bottom:20px">
+<div id="content" class="col-xs-12" style="padding-bottom:20px">
   <div class="col-md-12  margin_bottom_10 margin_top_10" >
     <span>Хлебные > Крошки</span>
   </div>
@@ -274,12 +273,7 @@
       <p class="pack_size_p">
         <b>Розмеры комплекта:</b> 
         <br class="visible-xs">
-        <span class="pack_size">
-          <button type="submit" name="submit" class="btn btn-default choose_size">S</button>
-          <button type="submit" name="submit" class="btn btn-default choose_size">M</button>
-          <button type="submit" name="submit" class="btn btn-default choose_size">L</button>
-          <button type="submit" name="submit" class="btn btn-default choose_size">XL</button>
-        </span>
+        <span class="pack_size">S, M, L, XL, XXL</span>
         <a href="#size-tableModal" id="size-table" class="pull-right" data-toggle="modal" data-target="#size-tableModal"><i class="fa fa-table"></i> <span class="hidden-xs">Таблица розмеров</span></a>
       </p>
       <p>
@@ -287,17 +281,18 @@
           <p>
             <label class="label_item-count" for="item_count">Количество: </label>  
             <span class="input-group">
-                      <span class="input-group-btn">
-                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
-                              <span class="glyphicon glyphicon-minus"></span>
-                          </button>
-                      </span>
                       <input  id="item_count" type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
                       <span class="input-group-btn">
                           <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
-                              <span class="glyphicon glyphicon-plus"></span>
+                            <i class="fa fa-sort-asc"></i>
                           </button>
-                      </span>
+                          <span class="clearfix"></span>
+                          <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                            <i class="fa fa-sort-desc"></i>
+                          </button>
+                      </span>                      
+<!--                       <span class="input-group-btn">
+                      </span> -->
             </span>
 
           </p>
@@ -481,10 +476,8 @@
     </div>
 
   </div>
-<!-- </div> -->
 
 </div>
-</div><!--container-->
 <footer class="footer col-md-12 padding_fix">
     <div class="container col-xs-12 footer_padding">
         <div class="col-md-3 text-center hidden-xs">
