@@ -572,9 +572,7 @@ hr {
 .clear-fix {
     clear:both;
 }
-body {
-    background-color: #f1f1f1
-}
+
 /*Item page*/
 /*left side*/
 a.photo-block, a.photo-block:focus, a.photo-block:hover{
@@ -584,7 +582,9 @@ a.photo-block, a.photo-block:focus, a.photo-block:hover{
 .photo-block {
     display: block;
     width: 100%;
+    max-width: 500px;
     height: 550px;
+    /*max-height: 1000px;*/
 /*    background-color: #fff;*/
     border:1px solid #dcdcdc;
 }
@@ -632,7 +632,8 @@ div.item_related_name {
 }
 .vertical-carousel .item-list li a {
     display: block;
-    width: 95%;
+    width: 100%;
+    max-width: 220px;
     margin: 0 auto;
     height: 130px;
     background: transparent;
@@ -704,10 +705,11 @@ div.item_related_name {
     width: 10px;
 }
 .input-group .form-control {
-    height: 28px;
-   z-index: 0; 
-  float: left;
-  width: 50px;    
+    height: 36px;
+    z-index: 0; 
+    float: left;
+    width: 50px;
+    border-radius: 0;    
 }
 .input-group-btn {
   width: 0;
@@ -791,9 +793,11 @@ div.item_related_name {
 }
 .pack_size {
     display: inline-block;
+    background:#fff;
+    padding: 5px;
+    border:1px solid #ddd;
 }
-.choose_size {
-    /*float: left;*/
+/*.choose_size {
     margin-right: 5px;
     font-size: 1em;
     color: #fff;
@@ -822,11 +826,19 @@ div.item_related_name {
   box-shadow: 3px 3px 7px 0 rgba(105, 206, 95, .5), inset 0 -1px 0 0 #3a9731;
   color: #a2e09d;
   outline: 0;    
+}*/
+.btn-number {
+    padding: 1px 4px;
+    font-size: 14px;
+    border-radius: 0;
+    z-index: 0;
 }
+
+
 .add_to_basket, .add_to_basket:focus {
     position: absolute;
     top:-50px;
-    margin-left: -20%;
+    margin-left: -17%;
     font-size: 1.2em;
     color: #fff;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
