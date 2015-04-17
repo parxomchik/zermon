@@ -274,7 +274,9 @@ code {
   height: auto;
 }
 /*------ end owl --------*/
-
+.padding_0 {
+    padding: 0;
+} 
 .padding_top_10 {
     padding-top: 10px;
 }
@@ -573,7 +575,7 @@ hr {
     clear:both;
 }
 
-/*Item page*/
+/*Item page style*/
 /*left side*/
 a.photo-block, a.photo-block:focus, a.photo-block:hover{
     color:inherit;
@@ -637,7 +639,7 @@ div.item_related_name {
     margin: 0 auto;
     height: 130px;
     background: transparent;
-    border:1px solid #ccc;
+    border:1px solid #ddd;
     margin-bottom: 1px;
 }
 #gallery_01 img {
@@ -744,7 +746,10 @@ div.item_related_name {
     padding: 15px;
 }
 .tab-content .active img{
-    border: 0!important;
+    border: 1px solid #ddd!important;
+}
+.tab-content .active img:hover {
+    border-top: 4px solid orange!important; 
 }
 /*style for comment form*/
 .comment {
@@ -797,36 +802,6 @@ div.item_related_name {
     padding: 5px;
     border:1px solid #ddd;
 }
-/*.choose_size {
-    margin-right: 5px;
-    font-size: 1em;
-    color: #fff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2);
-    vertical-align: middle;
-    border-radius: 3px;
-    border:none;
-    outline: 0;
-    background: #4bbe3f;
-    background: -webkit-linear-gradient(top, #79d670, #4bbe3f);
-    box-shadow: 3px 3px 7px 0 rgba(105, 206, 95, .5), inset 0 -3px 0 0 #3a9731; 
-}
-.choose_size:hover {
-    background: #1fc80d;
-    background: -webkit-linear-gradient(top, #69f95b, #1fc80d);
-    color:#fff;
-    border:none;
-    box-shadow: 3px 3px 7px 0 rgba(105, 206, 95, .5), inset 0 -3px 0 0 #3a9731;
-}
-.choose_size:active, .choose_size:focus {
-  background: #29b11b;
-  background: -webkit-linear-gradient(top, #62cf57, #29b11b);
-  background: -ms-linear-gradient(top, #62cf57, #29b11b);
-  background: -moz-linear-gradient(top, #62cf57, #29b11b);
-  background: linear-gradient('to bottom', #62cf57, #29b11b);
-  box-shadow: 3px 3px 7px 0 rgba(105, 206, 95, .5), inset 0 -1px 0 0 #3a9731;
-  color: #a2e09d;
-  outline: 0;    
-}*/
 .btn-number {
     padding: 1px 4px;
     font-size: 14px;
@@ -976,5 +951,110 @@ div.item_related_name {
 @media (max-width:500px){
     .photo-block {
         max-height: 400px;
+    }
+}
+
+/*Filter page style*/
+
+/*Style for filter blocks*/
+.filter_block {
+    width: 90%;
+    height: auto;
+    background: #fff;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #ddd;
+    padding:10px 15px;
+    /*font-size: 16px;*/
+}
+.filter_block>p{
+    font-weight: bold;
+}
+.check_box {
+    margin: 0px;
+    color: #B47F31;
+}
+.check_box:hover, .check_box.active {
+    color: #eda640;
+}
+.check_box label {
+    font-weight: normal;
+}
+/*For price*/
+.filter_block.price_block input{
+    width: 34%;
+}
+/*for reset_button*/ 
+.filter_block.btn_reset_block {
+    padding: 0;
+    border: 1px solid #ddd;
+}
+.filter_block.btn_reset_block:hover {
+    background: #B47F31;
+    color:#fff;
+}
+.filter_block.btn_reset_block button.btn_reset_filters {
+    width: 100%;
+    padding:5px;
+    text-align: center;
+    font-size: 1.2em;
+    background: none;
+    border: none;
+}
+/*Styles for facking slider*/
+.slider.slider-horizontal {
+    width: 100%!important;
+}
+.slider-track {
+    border-radius: 0!important;
+}
+.slider-selection {
+    background: #d6a45c!important;
+}
+.slider.slider-horizontal .slider-tick, .slider.slider-horizontal .slider-handle {
+      margin-left: -5px!important;
+}
+.slider-handle.round {
+    border-radius: 0!important;
+}
+.slider-handle {
+  width: 8px!important;
+  height: 19px!important;
+  background: #555!important;
+}
+#ex2 {
+    width: 100%;
+}
+/*color preview block*/
+.color_preview {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border:1px solid #ddd;
+}
+.color_preview.black {
+    background: black;
+}
+.color_preview.white {
+    background: white;
+}
+
+.color_preview.red {
+    background: red;
+}
+.color_preview.yellow {
+    background: yellow;
+}
+.color_preview.green {
+    background: green;
+}
+
+
+  /*style for mobile and "planshet"*/ 
+@media (max-width:992px) {
+}
+
+@media (max-width:768px){
+    .filter_block {
+        width: 100%;
     }
 }
