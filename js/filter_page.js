@@ -10,4 +10,14 @@ $(document).ready(function() {
     	$('.check_box').removeClass('active');
   	});
 
+
+
+// var start = $('#ex2').slider()
+//     .on('slide', inputChange)
+//     .data('slider');
+
+// var inputChange = function() {
+//   $('#price_min').attr('value', start.getValue())
+// };
+
 });
