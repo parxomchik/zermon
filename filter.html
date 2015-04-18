@@ -19,7 +19,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">   
     <link href="css/jquery.fancybox.css" rel="stylesheet">   
-    <link href="css/bootstrap-slider.css" rel="stylesheet">   
+    <link href="css/jquery.nouislider.min.css" rel="stylesheet">   
+    <link href="css/jquery.nouislider.pips.min.css" rel="stylesheet">   
 
 
 
@@ -211,18 +212,19 @@
 <!--   <div class="container"> -->
   <div class="col-md-12 main_content" >
     <div class="row padding_0">
-      <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="col-md-3 col-sm-4 col-xs-12 hidden-xs filters">
         <!-- filters blocks -->
         <div class="filter_block price_block">
           <p>Цена</p>
           <p>
             <label for="price_min" class="text-muted">От</label>
-            <input id="price_min" type="text" name="price_min" placeholder="10">
+            <input id="price_min" type="number" name="price_min">
             <label for="price_max" class="text-muted">До</label>
-            <input id="price_max" type="text" name="price_max" placeholder="1000">
+            <input id="price_max" type="number" name="price_max">
           </p>
           <p>
-           <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,1000]"/>
+          <div id="slider_price"></div>
+           <!-- <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,1000]"/> -->
           </p>
 
         </div>
@@ -317,37 +319,92 @@
         <div class="filter_block btn_reset_block">
           <button type="submit" name="reset_filters" class="btn_reset_filters"><i class="fa fa-times"></i> Сбросить все фильтры</button>
         </div>
+        <div class="filter_block btn_reset_block visible-xs">
+          <button type="submit" name="hide_filters" class="btn_hide_filters"><i class="fa fa-times"></i> Закрыть меню фильтров</button>
+        </div>        
+        <div class="clearfix visible-xs" style="margin-top:20px;"></div>
 
       </div>
+      <div class="col-xs-12 visible-xs">
+        <div class="filter_block">
+          <button type="submit" name="show_filters" class="btn_show_filters"><i class="fa fa-angle-down"></i> Открыть меню фильтров</button>
+        </div>
+      </div>        
       <div class="col-md-9 col-sm-8 col-xs-12">
         <div class="row">
-          <div class="col-md-7">
-            <h2 class="margin_fix">Мужчинам</h2>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <h2 class="margin_fix filter_label" style="margin-bottom:10px;">Мужчинам</h2>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-8 col-sm-8 col-xs-12">
             <div class="sort pull-right">
               <span style="line-height:2.2em; margin-right:5px;">Сортировать: </span>
               <div class="item_sort" id="item_sort">
-                <span value="1" class="active_sort" id=""><span id="current_value">От дешевых к дорогим</span> <i class="fa fa-angle-down pull-right"></i></span>
+                <span class="active_sort" id=""><span id="current_value" value="1">От дешевых к дорогим</span> <i class="fa fa-angle-down pull-right"></i></span>
                 <ul class="dropdown_sort hidden">
-                  <li><a href="#" class="active">От дешевых к дорогим</a></li>
-                  <li><a href="#" class="">От дорогих к дешевым</a></li>
-                  <li><a href="#" class="">Популярные</a></li>
-                  <li><a href="#" class="">Новые</a></li>
-                  <li><a href="#" class="">По рейтингу</a></li>
+                  <li><a href="#" class="active" value="1">От дешевых к дорогим</a></li>
+                  <li><a href="#" class="" value="2">От дорогих к дешевым</a></li>
+                  <li><a href="#" class="" value="3">Популярные</a></li>
+                  <li><a href="#" class="" value="4">Новые</a></li>
+                  <li><a href="#" class="" value="5">По рейтингу</a></li>
                 </ul>
               </div>
-<!--               <select name="item_sort" id="item_sort">
-                <option value="cheap_to_expensive">От дешевых к дорогим</option>
-                <option value="expensive_to_cheap">От дорогих к дешевым</option>
-                <option value="popular">Популярные</option>
-                <option value="new">Новые</option>
-                <option value="rating">По рейтингу</option>
-              </select> -->
             </div>
           </div>          
-        </div>
-          
+        </div><!--end row-->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="filter_photo_block">
+              <a href="#" class="photo">
+                <img id="" src="img/odegda/IMG_8708.jpg" alt="">
+              </a>
+              <div class="description">
+                <p class="text-muted firm_name">Firm name</p>
+                <p class="item_name">Item name</p>
+                <p class="price">$1000</p>
+              </div>
+            </div>
+            <div class="filter_photo_block">
+              <a href="#" class="photo">
+                <img id="" src="img/odegda/IMG_8708.jpg" alt="">
+              </a>
+              <div class="description">
+                <p class="text-muted firm_name">Firm name</p>
+                <p class="item_name">Item name</p>
+                <p class="price">$1000</p>
+              </div>
+            </div>
+            <div class="filter_photo_block">
+              <a href="#" class="photo">
+                <img id="" src="img/odegda/IMG_8708.jpg" alt="">
+              </a>
+              <div class="description">
+                <p class="text-muted firm_name">Firm name</p>
+                <p class="item_name">Item name</p>
+                <p class="price">$1000</p>
+              </div>
+            </div>
+            <div class="filter_photo_block">
+              <a href="#" class="photo">
+                <img id="" src="img/odegda/IMG_8708.jpg" alt="">
+              </a>
+              <div class="description">
+                <p class="text-muted firm_name">Firm name</p>
+                <p class="item_name">Item name</p>
+                <p class="price">$1000</p>
+              </div>
+            </div>
+            <div class="filter_photo_block">
+              <a href="#" class="photo">
+                <img id="" src="img/odegda/IMG_8708.jpg" alt="">
+              </a>
+              <div class="description">
+                <p class="text-muted firm_name">Firm name</p>
+                <p class="item_name">Item name</p>
+                <p class="price">$1000</p>
+              </div>
+            </div>                                                
+          </div>
+        </div>  
       </div>
     </div>    
 
@@ -577,11 +634,11 @@
 <script src='js/jquery.elevateZoom-3.0.8.min.js'></script>
 <script src='js/jquery.fancybox.pack.js'></script>
 <script src='js/item_count.js'></script>
-<script src='js/bootstrap-slider.js'></script>
+<script src='js/jquery.nouislider.all.min.js'></script>
+<script src='js/jquery.nouislider.min.js'></script>
 <script src='js/filter_page.js'></script>
 <script>
-  $("#ex2").slider({});
-      // $('#price_min').getValue();
+
 
 </script>
 

@@ -10,38 +10,60 @@ $(document).ready(function() {
     	$('.check_box').removeClass('active');
   	});
 
-    //select made in sm sklipav
+    //select "made in sam sklipav"
 
     $('.item_sort').click(function() {
     	$(this).children('.dropdown_sort').toggleClass('hidden');
-    	$(this).children('.dropdown_sort').toggleClass('active');
-    	// $('.item_sort .active_sort').css('border-bottom','1px solid #B47F31');	
+    	$(this).toggleClass('active');
     });
     $('.item_sort .dropdown_sort li a').click(function() {
     	$('.item_sort .dropdown_sort li a').removeClass('active');
-    	$('.item_sort').children('.dropdown_sort').removeClass('active');
     	$(this).addClass('active');
-    	var value = $(this).text();
-    	$('#current_value').text(value);
+    	var valueText = $(this).text();
+    	var value = $(this).attr('value');
+    	$('#current_value').text(valueText);
+    	$('#current_value').attr('value', value);
     });
-    // $('body:not(.item_sort)').click(function() {
-    // 	$('.item_sort').children('.dropdown_sort').addClass('hidden');
-    // });
-// $(function(){
-//   $('#ex2').slider({
-//        formater: function(value) {
-//          return 'Current value: '+value;
-//        }
-//   }).on('slideStop', function(ev){
-//      $(this).val($(this).data('slider').getValue());
-//   });
 
-// var start = $('#ex2').slider()
-//     .on('slide', inputChange)
-//     .data('slider');
 
-// var inputChange = function() {
-//   $('#price_min').attr('value', start.getValue())
-// };
+	$(document).click(function(e){
+	  if ($(e.target).closest(".item_sort").length) return;
+	  $('.item_sort').children('.dropdown_sort').addClass('hidden');
+	  $('.item_sort').removeClass('active');
+	  e.stopPropagation();
+	  });
+
+	//show/hide filters menus for mobile version 
+
+	$('.btn_show_filters').click(function(){
+		$(this).parent().addClass('hidden-xs');
+		$('.filters').removeClass('hidden-xs');
+	});
+	$('.btn_hide_filters').click(function(){
+		$('.filters').addClass('hidden-xs');
+		$('.btn_show_filters').parent().removeClass('hidden-xs');
+	});
+
+	//FA***NG PRICE SLIDER
+	$('#slider_price').noUiSlider({
+		start: [ 10, 1000 ],
+		connect: true,
+		range: {
+			'min': 10,
+			'max': 1000
+		}
+	});
+
+	for ( var i = 10; i <= 1000; i++ ){
+		$('#price_min').append(i);
+	}
+
+
+	$('#slider_price').Link('lower').to($('#price_min'), null, wNumb({
+		decimals: 0
+	}));
+		$('#slider_price').Link('upper').to($('#price_max'), null, wNumb({
+		decimals: 0
+	}));
 
 });
