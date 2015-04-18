@@ -979,6 +979,9 @@ div.item_related_name {
     margin: 0px;
     color: #B47F31;
 }
+.check_box:hover label{
+    text-decoration: underline;
+}
 .check_box:hover, .check_box.active {
     color: #eda640;
 }
