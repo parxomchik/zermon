@@ -968,6 +968,7 @@ div.item_related_name {
 }
 
 /*Filter page style*/
+/*left side*/
 
 /*Style for filter blocks*/
 .filter_block {
@@ -1064,8 +1065,63 @@ div.item_related_name {
     background: green;
 }
 
+/*Filter page style*/
+/*Right side*/
 
-  /*style for mobile and "planshet"*/ 
+/*for select*/
+
+.item_sort {
+    padding:0;
+    padding:0;
+    text-align: center;
+    background: #fff;
+    float: right;
+    width: 200px;
+}
+.item_sort .active_sort {
+    display: block;
+    padding: 5px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; 
+}
+.item_sort .active_sort:hover, .item_sort .active_sort:focus{
+    border-bottom: 1px solid #B47F31;
+    cursor: pointer;
+}
+.item_sort .dropdown_sort {
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+.item_sort .dropdown_sort li {
+    list-style: none;
+}
+.item_sort .dropdown_sort li a.active {
+    cursor: default;
+    color:#777;
+}
+.item_sort .dropdown_sort li a{
+    padding: 2px;
+    display: block;
+    width: 100%;
+    text-decoration: none;    
+}
+.item_sort .dropdown_sort li a:not(.active):hover, .item_sort .dropdown_sort li a:not(.active):focus {
+    background: #B47F31;
+    color:#fff;
+}
+.fa-angle-down {
+    line-height:1.3em!important;
+}
+/*.sort select {
+    padding: 5px 15px;
+    border:none;
+    border-bottom: 1px solid #ddd;
+}
+.sort select option:hover {
+
+}*/
+/*style for mobile and "planshet"*/ 
 @media (max-width:992px) {
 }
 
