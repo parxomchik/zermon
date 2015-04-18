@@ -297,6 +297,10 @@ code {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+#user_menu {
+    color: white;
+/*    margin-top: 10px;*/
+}
 /*
 .padding_top_10 {
     padding-top: 6px;
@@ -313,6 +317,9 @@ code {
 }
 .margin_top_10 {
     margin-top: 10px;
+}
+.margin_top_5 {
+    margin-top: 5px;
 }
 .margin_bottom_10 {
     margin-bottom: 10px;
