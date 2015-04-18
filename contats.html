@@ -1,0 +1,555 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/owl.transitions.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">   
+    <link href="css/jquery.fancybox.css" rel="stylesheet">   
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<!-- Fixed navbar -->
+<nav class="navbar-inverse col-xs-12 hidden-xs" id="menu1">
+    <div class="container col-xs-12 padding_fix">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">О нас</a></li>
+                <li><a href="#about">Новости</a></li>
+                <li><a href="#contact">Условия</a></li>
+<!--                <li><a href="#contact">Полезное
+</a></li>-->
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li id="carrency_label"><span>Валюта : </span></li>
+               <li><select class="form-control" id="currency">
+  <option>Грн</option>
+  <option>usd</option>
+</select></li>
+                <li><a href="#contact">
+                <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+<!--                <i class="fa fa-phone"></i>-->
+067 731 21 17</a></li>
+<!--
+                <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+-->
+                <li><a   data-toggle="modal" data-target=".register_modal">Войти</a></li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+  <nav class="  col-xs-12 font_size_18" role="navigation" id="main_nav">
+		<div class="container col-xs-12 padding_fix">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand logo" href="#">ZER<span>MON</span></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+ <ul class="nav navbar-nav text-center">
+ <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Костюмы <b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16">
+    <li>
+<!--        <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>-->
+<!--
+        <ul class="dropdown-menu sub-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+        </ul>
+-->
+    </li>
+                 <li><a href="">Классические</a></li>
+                <li><a href="">Приталеные</a></li>
+                <li><a href="">Большие размеры</a></li>
+  </ul>
+</li>   
+  <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Пиджаки <b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16" >
+    <li>
+    </li>
+                 <li><a href="">Классические</a></li>
+                <li><a href="">Приталеные</a></li>
+                <li><a href="">Большие размеры</a></li>
+  </ul>
+</li>  
+   <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Брюки <b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16" >
+    <li>
+    </li>
+                <li><a href="">Классические</a></li>
+                <li><a href="">Зауженые</a></li>
+  </ul>
+</li>    
+   <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Рубашки<b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16" >
+    <li>
+    </li>
+                <li><a href="">Короткий рукав</a></li>
+                <li><a href="">Длинный рукав</a></li>
+                <li><a href="">Большие размеры</a></li>
+  </ul>
+</li>    
+<li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Трикотаж<b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16" >
+    <li>
+    </li>
+        <li><a href="">Свитера</a></li>
+        <li><a href="">Кардиганы</a></li>
+        <li><a href="">Поло</a></li>
+        <li><a href="">Жилеты</a></li>
+        <li><a href="">Футболки</a></li>
+        <li><a href="">Реглан</a></li>
+  </ul>
+</li>   
+ <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Аксесуары<b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16">
+    <li>
+    </li>
+    <li><a href="#">Шарфы</a></li>
+    <li><a href="#">Галстуки</a></li>
+    <li><a href="#">Платки шейные</a></li>    
+    <li><a href="#">Пластроны</a></li>
+    <li><a href="#">Бабочки</a></li>
+    <li><a href="#">Запонки</a></li>
+    <li><a href="#">Ремни</a></li>
+    <li><a href="#">Подарочная упаковка</a></li>
+  </ul>
+</li>    
+ <li class="dropdown">
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Верхняя одежда<b class="caret"></b></a>
+  <ul class="dropdown-menu font_size_16">
+    <li>
+    </li>
+    <li><a href="#">Пальто</a></li>
+    <li><a href="#">Куртки</a></li>
+    <li><a href="#">Ветровки</a></li>
+    <li><a href="#">Плащи</a></li>
+  </ul>
+</li>   
+                </ul>
+                <button id="korzina" class="btn margin_top_15 font_size_18 pull-right" data-toggle="modal" data-target="#korzinaModal"><i class="fa fa-shopping-cart"></i></button>
+				<form class="navbar-form" role="search">
+					<div class="input-group col-xs-12  ">
+						<input type="text" class="form-control col-xs-12 margin_top_10" placeholder=" Поиск">
+						<span class="input-group-btn text-right padding_top_10">
+							<button id="reset_btn" type="reset" class="btn btn-default">
+								<span class="glyphicon glyphicon-remove">
+									<span class="sr-only">Close</span>
+								</span>
+							</button>
+							<button id="search_btn" type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search font_size_18">
+									<span class="sr-only">Search</span>
+								</span>
+							</button>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>   
+<!-- Begin page content -->
+<div id="content" class="col-xs-12" style="padding-bottom:20px">
+<!--
+  <div class="col-md-12  margin_bottom_10 margin_top_10" >
+    <span>Хлебные > Крошки</span>
+  </div>
+-->
+  
+  <div class="col-md-4 text-center">
+  <h3>ТЕЛЕФОНЫ</h3>
+<p>+38 (095) 095 00 00</p>
+<p>+38 (095) 095 00 00</p>
+   </div>
+  <div class="col-md-4 text-center">
+  <h3>ГОРЯЧАЯ ЛИНИЯ</h3>
+<p>+38 (095) 095 00 00</p>
+<p>+38 (095) 095 00 00</p>
+ </div>
+  <div class="col-md-4 text-center">
+      <h3>МЫ ОНЛАЙН</h3>
+<p>E-mail: info@yourshop.com</p>
+<p>Skype: yourshop.com</p>
+  </div>
+  <div class="col-md-12">
+    <div class="map" id="map-canvas"></div>
+  </div>
+<!--   <div class="container"> -->
+
+
+</div>
+<footer class="footer col-md-12 padding_fix">
+    <div class="container col-xs-12 footer_padding">
+        <div class="col-md-3 text-center hidden-xs">
+            <img  class="logo_img center-block" src="Img/logo_footer_img" alt="">
+            <a class="navbar-brand logo_footer text-center" href="#">ZERMON</a>
+        </div>
+        <div class="col-md-2 col-xs-12 text-center padding_fix">
+            <strong><a class="font_size_16" href="">О нас</a></strong>
+            <ul class="list-unstyled font_size_16">
+                <li><a class="col-xs-6 col-md-12" href="#">О компании</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Отзывы</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Новости</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Статьи</a></li>
+                <li class="hidden-xs"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 text-center col-xs-12 padding_fix">
+            <strong><a class="font_size_16" href="">Условия</a> </strong>
+            <ul class="list-unstyled font_size_16">
+                <li><a class="col-xs-6 col-md-12" href="#">Сотрудничество</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Оплата и доставка</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Оформление заказа</a></li>
+                <li><a class="col-xs-6 col-md-12" href="#">Гарантия</a></li>
+                <li class="hidden-xs"><a href="#">Вход/Регистрация</a></li>
+                <li class="hidden-xs"><a href="#">Обратный звонок</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 text-center hidden-xs">
+            <strong><a class="font_size_16" href="">Каталог</a> </strong>
+            <ul class="list-unstyled font_size_16">
+                <li><a href="#">Пиджаки</a></li>
+                <li><a href="#">Брюки</a></li>
+                <li><a href="#">Рубашки</a></li>
+                <li><a href="#">Трикотаж</a></li>
+                <li><a href="#">Аксесуары</a></li>
+                <li><a href="#">Верхняя одежда</a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 col-xs-12 text-center">
+            <strong><a class="col-xs-12 font_size_16" href="">Контакты</a></strong>
+            <ul class="list-unstyled font_size_16">
+                <li >Наш адрес: г.Киев ул.Срибнокильськая 1</li>
+                <li>Наш телефон: +38 (050) 341-00-87</li>
+                <li>Наш Skype: Zermon.ua</li>
+                <li>Наш E-mail: zermon.ua@gmail.com</li>
+            </ul>
+        </div>
+<!--        <a class="navbar-brand logo_footer pull-right col-md-3 col-xs-12 text-center" href="#">ZERMON</a>-->
+<!--    <hr class="white_line col-xs-12 padding_fix">-->
+    </div>
+</footer>
+<div class="modal fade register_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<!--        <h4 class="modal-title text-center">Добро пожаловать</h4>-->
+          <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs col-xs-offset-4" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Войти</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Регистрация</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">      
+        <div class="modal-body">
+<form role="form">
+  <div class="form-group">
+<!--    <label for="exampleInputEmail1">Email address</label>-->
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+</form>      
+        </div>
+      <div class="modal-footer">
+            <button id="login" type="submit" class="btn btn-default btn-block">Войти</button>
+      </div>
+      </div>
+    <div role="tabpanel" class="tab-pane" id="profile">
+          <div role="tabpanel" class="tab-pane">      
+        <div class="modal-body">
+<form role="form">
+  <div class="form-group">
+<!--    <label for="exampleInputEmail1">Email address</label>-->
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+  </div>
+  <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Repeat Password">
+  </div> 
+    <h4 class="text-center">Введите личные данные</h4>
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Введите Фамилию и Имя">
+  </div> 
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Страна">
+  </div>
+    <div class="form-group">
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Область, Город">
+  </div>   
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Индекс">
+  </div>
+        <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Адрес">
+  </div>  
+    <div class="form-group">
+<!--    <label for="exampleInputPassword1">Password</label>-->
+        <input type="text" class="form-control" placeholder="Телефон">
+  </div>
+    </div>
+</form>      
+        </div>
+      <div class="modal-footer">
+            <button id="registration" type="submit" class="btn btn-default btn-block">Регистрация</button>
+      </div>
+      </div>
+      </div>
+
+  </div>
+
+</div>
+      </div>
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<div class="modal fade" id="korzinaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Ваши заказы</h4>
+      </div>
+      <div class="modal-body">
+<ul class="media-list">
+  <li class="media">
+           <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="media-left">
+     
+      <a href="#">
+        <img data-src="holder.js/150x150/sky" class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Футболка фирменая</h4>
+      <p>Размер M</p>
+      <p>300грн</p>
+    </div>
+  </li>
+</ul>
+   <ul class="media-list">
+  <li class="media">
+           <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <div class="media-left">
+     
+      <a href="#">
+        <img data-src="holder.js/150x150/sky" class="media-object" src="..." alt="...">
+      </a>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">Футболка фирменая</h4>
+      <p>Размер M</p>
+      <p>300грн</p>
+    </div>
+  </li>
+</ul>     
+        </div>
+        <div class="modal-footer">
+<strong>Итого: 600 грн</strong>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn btn-primary">Оформить заказ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Modal for size-table -->
+
+<div class="modal fade" id="size-tableModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title text-center" id="myModalLabel">Таблица розмеров</h4>
+      </div>
+      <div class="modal-body">
+        <h2 class="text-center">Таблица розмеров...</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/search.js"></script>
+<script src="js/readmore.min.js"></script>
+<script src="js/holder.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl_settings.js"></script>
+<script src='js/jquery.elevateZoom-3.0.8.min.js'></script>
+<script src='js/jquery.fancybox.pack.js'></script>
+<script src='js/item_count.js'></script>
+      <script>
+//    $('#info').readmore({
+//        collapsedHeight: 384,
+//        afterToggle: function(trigger, element, expanded) {
+//        if(! expanded) { // The "Close" link was clicked
+//          $('html, body').animate({scrollTop: $(element).offset().top}, {duration: 100});
+//        }
+//      }
+//    });
+
+    $('article').readmore({
+        speed: 500,
+        moreLink: '<a class="font_size_18 text-center link" href="#">Читать далее</a>',      
+        lessLink: '<a class="font_size_18 text-center link" href="#">Скрыть</a>'
+    });
+
+$("#img_01").elevateZoom({gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: 'active'});
+//pass the images to Fancybox
+$("#img_01").bind("click", function(e) { 
+  var ez =  $('#img_01').data('elevateZoom');
+ $.fancybox(ez.getGalleryList());
+  return false;
+}); 
+$(".scale-photo").bind("click", function(e) { 
+  var ez =  $('#img_01').data('elevateZoom');
+ $.fancybox(ez.getGalleryList());
+  return false; 
+  }); 
+
+// $("#img_01").elevateZoom({gallery:'gallery_01', cursor: 'pointer', galleryActiveClass: 'active', imageCrossfade: true, loadingIcon: 'http://www.elevateweb.co.uk/spinner.gif'}); 
+
+// //pass the images to Fancybox
+// $("#img_01").bind("click", function(e) {  
+//   var ez =   $('#img_01').data('elevateZoom'); 
+//   $.fancybox(ez.getGalleryList());
+//   return false;
+// });
+    
+  </script>
+     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+ <script>
+       
+var druzya = new google.maps.LatLng(50.4567102, 30.6046715);
+var parliament = new google.maps.LatLng(50.4567102, 30.6046715);
+var marker;
+var map;
+
+function initialize() {
+  var mapOptions = {
+    zoom: 15,
+    center: druzya
+  };
+
+  map = new google.maps.Map(document.getElementById('map-canvas'),
+          mapOptions);
+
+ var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+  var flightPlanCoordinates = [
+    new google.maps.LatLng(50.451803,30.598115),
+    new google.maps.LatLng(50.4567102, 30.6046715)
+  ];
+  var flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: '#FF0000',
+    strokeOpacity: 1.0,
+    strokeWeight: 2
+  });
+
+  flightPath.setMap(map);    
+    
+  marker = new google.maps.Marker({
+    map:map,
+    draggable:true,
+    animation: google.maps.Animation.DROP,
+    position: parliament
+  });
+  google.maps.event.addListener(marker, 'click', toggleBounce);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() != null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>

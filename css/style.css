@@ -11,6 +11,9 @@ body {
 /*    margin-bottom: 60px;*/
     
 }
+#map-canvas {
+    height: 500px;
+}
 .navbar-toggle .icon-bar {
     background-color: black;
 }
