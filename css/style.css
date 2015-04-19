@@ -1213,7 +1213,8 @@ input.item_count {
     color:#000;
 }
 .pagination_block .pagination li a:hover {
-    color: #eda640;  
+    background: #B47F31;
+    color: #fff;  
 }
 /*style for mobile and "planshet"*/ 
 @media (max-width:992px) {
