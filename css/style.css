@@ -587,7 +587,9 @@ hr {
 .clear-fix {
     clear:both;
 }
-
+.center {
+    margin:0 auto!important;
+}
 /*Item page style*/
 /*left side*/
 a.photo-block, a.photo-block:focus, a.photo-block:hover{
@@ -709,25 +711,9 @@ div.item_related_name {
     margin-top:10px;
 }
 /*style for item_count*/
-.label_item-count {
-    float: left;
-}
-.input-group {
-    bottom:4px;
-    left:5px;
-}
-.input-number {
-    width: 10px;
-}
-.input-group .form-control {
-    height: 36px;
-    z-index: 0; 
-    float: left;
+input.item_count {
     width: 50px;
-    border-radius: 0;    
-}
-.input-group-btn {
-  width: 0;
+    padding: 2px;
 }
 
 #item_parametr{
@@ -1131,7 +1117,7 @@ div.item_related_name {
 .filter_photo_block {
     position: relative;
     float: left;
-    width: 24.95%;
+    width: 19.85%;
     max-width: 350px;
     height: 340px;
     margin-bottom: 10px;
@@ -1159,8 +1145,29 @@ div.item_related_name {
     -o-transition: all .1s;
     transition: all .1s;    
 }
-.filter_photo_block .photo img {
+/*For last block*/
+.filter_photo_block_last .photo {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 12em;
+    color:#3a9731;
+}
 
+.filter_photo_block_last:hover {
+    border-top:0!important;
+}
+.filter_photo_block_last:hover .photo {
+    color:#4bbe3f;
+}
+.filter_photo_block_last .description a {
+    font-size: 2em;
+    color:#3a9731;
+}
+.filter_photo_block_last:hover .description {
+    background: transparent!important;
+}
+.filter_photo_block_last:hover .description a{
+    color:#4bbe3f!important;
 }
 .filter_photo_block .description {
     width: 100%;
@@ -1197,6 +1204,16 @@ div.item_related_name {
 }
 .filter_photo_block:hover .description .firm_name {
     color:#fff!important;    
+}
+/*for pagination*/
+.pagination_block {
+    width: 240px;
+}
+.pagination_block .pagination li a {
+    color:#000;
+}
+.pagination_block .pagination li a:hover {
+    color: #eda640;  
 }
 /*style for mobile and "planshet"*/ 
 @media (max-width:992px) {
@@ -1239,7 +1256,9 @@ div.item_related_name {
         background: none;
         border: none;
     }
-
+    .filter_photo_block_last .description a {
+        font-size: 1.5em;
+    }
 }
 @media (max-width:500px){
 

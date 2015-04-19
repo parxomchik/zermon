@@ -66,4 +66,11 @@ $(document).ready(function() {
 		decimals: 0
 	}));
 
+	$('.filter_photo_block_last').on('mouseover', function() {
+		$('.spin_on_hover').addClass('fa-spin');
+	})
+	$('.filter_photo_block_last').on('mouseleave', function() {
+		$('.spin_on_hover').removeClass('fa-spin');
+	})
+
 });
