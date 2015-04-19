@@ -1216,6 +1216,9 @@ input.item_count {
     background: #B47F31;
     color: #fff;  
 }
+.filter_right_side {
+    padding-left: 0;
+}
 /*style for mobile and "planshet"*/ 
 @media (max-width:992px) {
     .filter_label{
@@ -1227,6 +1230,9 @@ input.item_count {
 }
 
 @media (max-width:768px){
+    .filter_right_side {
+        padding-left: 15px;
+    }
     .filter_block {
         width: 100%;
     }
