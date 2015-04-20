@@ -14,6 +14,11 @@ body {
 #map-canvas {
     height: 500px;
 }
+#korzina .label {
+position: relative;
+  top: -9px;
+  left: 20;
+}
 .navbar-toggle .icon-bar {
     background-color: black;
 }
