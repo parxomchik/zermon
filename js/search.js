@@ -12,6 +12,7 @@
             var $form = $('.navbar-collapse form[role="search"].active')
     		$form.find('input').val('');
 			$form.removeClass('active');
+			$('#korzina').show();
 		}
 
 		// Show Search if form is not active // event.preventDefault() is important, this prevents the form from submitting
@@ -21,6 +22,7 @@
 				$input = $form.find('input');
 			$form.addClass('active');
 			$input.focus();
+			$('#korzina').hide();
 
 		});
 		// ONLY FOR DEMO // Please use $('form').submit(function(event)) to track from submission

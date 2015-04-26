@@ -1275,3 +1275,184 @@ input.item_count {
 @media (max-width:500px){
 
 }
+/*for index page(nav)*/ 
+/*style for mobile and "planshet"*/ 
+.navbar-brand {
+    padding-left:0;
+}
+.logo {
+  font-size: 35px;
+  padding-right: 5px;
+}
+.logo:before {
+  display: block;
+  float: left;
+  content: '';
+  background: url(../img/logo_img.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  /* margin-right: .25em; */
+  margin-top: -18px;
+}
+#main_nav .nav {
+    padding-top: 5px;
+    height: auto;
+}
+.my-nav>li>a{
+    padding-left: 0;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 18px; 
+}
+#korzina {
+    position: absolute;
+    right: 4%;
+    padding-left: 10px;
+    padding-right: 13px;
+}
+#korzina .label {
+    position: absolute;
+    right: -15px;
+    top:-15px;
+    left:inherit;
+}
+#search_btn, #reset_btn{
+  color: #dda454;
+   background: transparent!important; 
+}
+#search_input {
+   padding: 0;
+   padding-left: 15px;
+   padding-bottom: 5px;
+   width: 115%;
+}
+@media (max-width:1090px) {
+    .logo {
+        font-size: 30px;
+    }
+    .my-nav>li>a{
+        font-size: 16px; 
+        padding-right: 5px;
+        padding-left: 5px;
+        /*font-weight: 600;*/
+    }
+    .my-nav>li:first-child>a {
+        padding-left: 0;
+    }
+}
+@media (max-width:991px) {
+
+    .container>.navbar-collapse, .container>.navbar-header {
+         margin-left: 0px; 
+    } 
+    .dropdown-menu li:hover a{
+        visibility: hidden;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: none;
+    }  
+    .dropdown.open:hover .dropdown-menu li:hover a{
+        visibility: visible;
+    }
+    .dropdown.open:hover .dropdown-menu {
+        display: block;
+    } 
+    .logo {
+        font-size: 30px;
+    }
+    #main_nav .nav {
+        margin-left: 0;   
+    }
+    .my-nav {
+        display: block;
+        float: left;  
+    }
+    .my-nav>li>a{
+        font-size: 14px;
+        padding-right: 5px;
+ 
+    }
+    #search_btn, #reset_btn {
+
+    }
+}
+@media (max-width:900px){
+    .logo_span {
+       display: none;
+    }
+}
+
+@media (max-width:768px){
+    #korzina {
+        display: block!important;
+    }
+    .navbar-collapse {
+        max-height: none; 
+    }
+    .logo {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+    .logo_span {
+        display: inline;
+    }
+    #search_input {
+        padding: 5px;
+        width: 80%;
+        z-index: 1;
+    }
+    span.input-group-btn.text-right {
+        display: block;
+    }
+    #korzina {
+        position: absolute;
+        top:0;
+        right: 15px;
+        padding-left: 12px;
+        padding-right: 25px;
+        margin: 0;
+        z-index: 2;
+    }
+    #korzina .label {
+        position: absolute;
+        right: 0px;
+        top:0px;
+        left:inherit;
+        font-size: 11px;
+    }
+    .my-nav{
+        width: 100%;
+    }
+    .my-nav li a{
+        padding:10px 0;
+        font-size: 16px;
+    }
+    .dropdown-menu>li>a {
+        text-align: center;
+    }
+    .dropdown_plus {
+        position: absolute;
+        right: 5%;
+        top:10px;
+    }
+    #main_nav .navbar-nav>li>a:hover,
+    #main_nav .navbar-nav>li>a:active {
+        color: inherit;
+        background: inherit;
+    }
+    #main_nav .dropdown-menu>li>a:hover{
+        color: inherit;  
+        background:inherit; 
+    }
+    #main_nav .dropdown-menu>li>a:focus {
+        background:#e9e9e9;         
+    }    
+    .nav .open>a {
+        background: #eee;
+    }
+}
+@media (max-width:500px){
+
+}

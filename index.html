@@ -15,7 +15,7 @@
     <link href="css/owl.transitions.css" rel="stylesheet">
     <link href="css/owl.theme.css" rel="stylesheet">
     <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">  
     <link href="css/style.css" rel="stylesheet">
 
 
@@ -28,7 +28,7 @@
 
 <body>
 <!-- Fixed navbar -->
-<nav class="navbar-inverse col-xs-12 hidden-xs" id="menu1">
+<nav class="navbar-inverse col-xs-12 hidden-xs padding_fix" id="menu1" >
     <div class="container col-xs-12 padding_fix">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -47,12 +47,13 @@
 </a></li>-->
                 <li><a href="#contact">Контакты</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <ul class="nav navbar-nav navbar-right hidden-sm hidden-xs">
                 <li id="carrency_label"><span>Валюта : </span></li>
-               <li><select class="form-control padding_fix" id="currency">
-  <option>Грн</option>
-  <option>usd</option>
-</select></li>
+               <li><select class="form-control padding_fix " id="currency">
+                      <option>Грн</option>
+                      <option>usd</option>
+                    </select>
+                </li>
                 <li><a href="#contact">
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
 <!--                <i class="fa fa-phone"></i>-->
@@ -112,13 +113,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand logo" href="#">ZERMON</a>
+				<a class="navbar-brand logo" href="#"><span class="logo_span">ZERMON</span></a>
 			</div>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
- <ul class="nav navbar-nav text-center ">
+      <!-- <div class="clear-fix visible-sm"></div> -->
+			<div class="collapse navbar-collapse padding_fix" id="bs-example-navbar-collapse-1">
+ <ul class="nav navbar-nav text-center my-nav">
  <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Костюмы <b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Костюмы <b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16">
     <li>
 <!--        <a href="#">2-level Menu <i class="icon-arrow-right"></i></a>-->
@@ -136,7 +137,7 @@
   </ul>
 </li>   
   <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Пиджаки <b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Пиджаки <b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16" >
     <li>
     </li>
@@ -146,7 +147,7 @@
   </ul>
 </li>  
    <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Брюки <b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Брюки <b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16" >
     <li>
     </li>
@@ -155,7 +156,7 @@
   </ul>
 </li>    
    <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Рубашки<b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Рубашки<b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16" >
     <li>
     </li>
@@ -165,7 +166,7 @@
   </ul>
 </li>    
 <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Трикотаж<b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Трикотаж<b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16" >
     <li>
     </li>
@@ -178,7 +179,7 @@
   </ul>
 </li>   
  <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Аксесуары<b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Аксесуары<b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16">
     <li>
     </li>
@@ -193,7 +194,7 @@
   </ul>
 </li>    
  <li class="dropdown">
-  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Верхняя одежда<b class="caret"></b></a>
+  <a href="#" data-toggle="dropdown" class="dropdown-toggle">Верхняя одежда<b class="caret hidden-xs"></b><i class="fa fa-angle-down visible-xs dropdown_plus"></i></a>
   <ul class="dropdown-menu font_size_16">
     <li>
     </li>
@@ -204,13 +205,14 @@
   </ul>
 </li>   
                 </ul>
-                <button id="korzina" class="btn margin_top_10 font_size_18 pull-right" data-toggle="modal" data-target="#korzinaModal"><i class="fa fa-shopping-cart"></i><span class="label label-warning">3</span>
+<button id="korzina" class="btn margin_top_10 font_size_18" data-toggle="modal" data-target="#korzinaModal">
+<i class="fa fa-shopping-cart"></i><span class="label label-warning">3</span>
 </button>
 				<form class="navbar-form" role="search">
-					<div class="input-group col-xs-12  ">
+					<div class="input-group col-xs-12 ">
 						<input id="search_input" type="text" class="form-control col-xs-12" placeholder=" Поиск">
 						<span class="input-group-btn text-right ">
-							<button id="reset_btn" type="reset" class="btn btn-default">
+							<button id="reset_btn" type="reset" class="btn btn-default hidden-xs">
 								<span class="glyphicon glyphicon-remove">
 									<span class="sr-only">Close</span>
 								</span>
