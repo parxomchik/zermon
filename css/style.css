@@ -1385,9 +1385,6 @@ input.item_count {
 }
 
 @media (max-width:768px){
-    #korzina {
-        display: block!important;
-    }
     .navbar-collapse {
         max-height: none; 
     }
@@ -1407,20 +1404,30 @@ input.item_count {
         display: block;
     }
     #korzina {
-        position: absolute;
-        top:0;
-        right: 15px;
+        position: relative;
+        display: inline-block!important;
+        left: 0px;
         padding-left: 12px;
         padding-right: 25px;
         margin: 0;
+        margin-bottom: 10px;
         z-index: 2;
     }
     #korzina .label {
         position: absolute;
-        right: 0px;
-        top:0px;
-        left:inherit;
+        right: -5px;
+        top:-10px;
+        left:auto;
         font-size: 11px;
+    }
+    .korzina_label {
+        display: inline!important;
+        margin-left: 15px;
+        font-size: 16px;
+        text-decoration: none!important;     
+    }
+    #search_btn {
+        left: 10px;
     }
     .my-nav{
         width: 100%;
